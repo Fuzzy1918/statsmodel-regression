@@ -1,1 +1,17 @@
+# Import seaborn with alias sns
+import seaborn as sns
 
+# Draw the scatter plot
+sns.scatterplot(x="n_convenience",
+                y="price_twd_msq",
+                data=taiwan_real_estate)
+
+# Draw a trend line on the scatter plot of n_convenience vs. price_twd_msq
+sns.regplot(x='n_convenience',
+         y="price_twd_msq",
+         data=taiwan_real_estate,
+         ci=.5,
+         scatter_kws={'alpha': 0.5})
+
+# Show the plot
+plt.show()
