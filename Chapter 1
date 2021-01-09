@@ -27,3 +27,4 @@ mdl_price_vs_conv = mdl_price_vs_conv.fit()
 
 # Print the parameters of the fitted model
 print(mdl_price_vs_conv.params)
+
