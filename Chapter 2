@@ -1,1 +1,18 @@
 #working with model objects
+
+# Get the coefficients of mdl_price_vs_conv
+coeffs = mdl_price_vs_conv.params
+print(coeffs)
+# Get the intercept
+intercept = coeffs['Intercept']
+print("2")
+# Get the slope
+slope = coeffs['n_convenience']
+print("3")
+
+# Manually calculate the predictions
+price_twd_msq = intercept + slope * explanatory_data
+print(price_twd_msq)
+
+# Compare to the results from .predict()
+print(price_twd_msq.assign(predictions_auto=mdl_price_vs_conv.predict(explanatory_data)))
