@@ -16,3 +16,6 @@ print(price_twd_msq)
 
 # Compare to the results from .predict()
 print(price_twd_msq.assign(predictions_auto=mdl_price_vs_conv.predict(explanatory_data)))
+
+#Regression to the mean
+
