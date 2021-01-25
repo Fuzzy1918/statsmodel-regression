@@ -22,3 +22,6 @@ plt.ylabel("Sqrt of abs val of stdized residuals")
 
 # Show the plot
 plt.show()
+
+#Outliers, leverage, and influence
+
