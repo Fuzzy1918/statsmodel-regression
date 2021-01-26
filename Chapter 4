@@ -1,2 +1,7 @@
 #Why you need logistic regression
 
+# Redraw the plot with time_since_first_purchase
+sns.displot(data = churn, x = 'time_since_first_purchase', col = 'has_churned')
+
+# Show the plot
+plt.show()
