@@ -33,3 +33,6 @@ mdl_churn_vs_relationship = logit("has_churned ~ time_since_first_purchase", dat
 
 # Print the parameters of the fitted model
 print(mdl_churn_vs_relationship.params)
+
+#Predictions and odds ratios
+
